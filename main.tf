@@ -11,7 +11,7 @@ resource "aws_lightsail_instance" "example" {
                       sudo systemctl enable apache2
                       echo '<h1> this is a deployed by maka <h1>' | sudo tee /var/www/html/index.html
                       EOF
-  key_pair_name     = "some_key_name"
+  key_pair_name     = "cento"
   tags = {
     foo = "bar"
   }
